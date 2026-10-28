@@ -1,0 +1,189 @@
+{
+  "JavaRelease": 17,
+  "JarName": "Build42ConsoleFixes.jar",
+  "AdditionalClasspath": [],
+  "Entries": [
+    {
+      "Path": "antikristianos/build42consolefixes/CoopServerJvmArguments.class",
+      "Size": 5638,
+      "Sha256": "ADFFBFA8E9312182ED3A2627DBFBAAB1A1D121FF741B81E267AF9C62D28B1A4D"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopAgent.class",
+      "Size": 1517,
+      "Sha256": "1FE4C43A02C28F0EC1B2154AD76D3D600078E331C1825BFD7C1F8124FF8E2943"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopClient.class",
+      "Size": 9055,
+      "Sha256": "43FBC8730B4476C807DCFC5E145FDEB224300570A222E0ABC3711CDC864B3ED9"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopFiles.class",
+      "Size": 4126,
+      "Sha256": "666B310B85FA90D03B1B844E7519F92E857BABDD70CC3179762BA343268EC2E3"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopHost.class",
+      "Size": 4449,
+      "Sha256": "5B0E8A2DF07D59474D122B7760792E739330E589A82FFC462F52334D1619CDC0"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopLaunch.class",
+      "Size": 4354,
+      "Sha256": "7C95C8A52782D104D53BC7F3AF94B082477CADFAF0486D67FDD13BAAA85B831D"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopTransformer$1.class",
+      "Size": 1060,
+      "Sha256": "AE8C916C1F98222CDE1E5D610B62A94925223BF56B8B148EE3C14B10F3C458E1"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopTransformer$InstallAdvice.class",
+      "Size": 1736,
+      "Sha256": "4A526D9661755E8337BD3F31A08C3137A8C044DAAB0560859FA77EA607DC1091"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/CoopWorkshopTransformer.class",
+      "Size": 6124,
+      "Sha256": "7C9CC0013F3266D863E666568E469B47F0F255AE7A3F5D5D06ED21AA750F02DB"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/FloorPlacement$Scope.class",
+      "Size": 1569,
+      "Sha256": "4CD3222C12DB41788CCF4FDA4F30ECF5B105197792982C6E5EDF56023DA9F78A"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/FloorPlacement.class",
+      "Size": 9856,
+      "Sha256": "0CAD01799C04DDC15DCFC14687DE2D1ED09240DD6A3F32FA600A1F04F0089F8B"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/HeadlessWarningFilter.class",
+      "Size": 614,
+      "Sha256": "C608D892B5646FF379B58DFDC791F47B6F2C16117EC1EA8E81D51EACE7F516DB"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/ModFolderScanGuard.class",
+      "Size": 1319,
+      "Sha256": "682CB6396D6753EC9F63FC4C8A5C21CB5E85E26F09CF74A09D5DF866FC400B37"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/MultiplayerTranslationModOrder.class",
+      "Size": 1336,
+      "Sha256": "2108C3D608466A18CD662DC2E407F9B7C7104BBFD323C37BE6919007F5C68B0C"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/OptionalDirectoryScan.class",
+      "Size": 517,
+      "Sha256": "20CD7464633EC88DEA29CDB11DD4ADAA3B62D9E126F28BD6D58E9F52AF198ECA"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchAdvancedAnimatorSearchFolders.class",
+      "Size": 1983,
+      "Sha256": "53C79C225DC48D5FA4FCFA5FB930B917AC40DAD0E854603EAE9B24D1DAA1B124"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchCoopMasterGarbageCollector.class",
+      "Size": 1020,
+      "Sha256": "A6D3AF40F3AC1F2C61DB084610F3461FA9424CF83F88B65706C8AAE26E8F4C68"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchCoopMasterUpdate.class",
+      "Size": 727,
+      "Sha256": "2A3C86D060002D81CA1A34B411E0D93042CAC7E13F6F153F5F38862F05F785E4"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchFileSystemReset.class",
+      "Size": 955,
+      "Sha256": "9D726999B04F9088867C2AD1DB0AC75E16B0B06AD047AFA023690F60AA8DB8CB"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchFileSystemUpdate.class",
+      "Size": 958,
+      "Sha256": "481FF4F38EB308076E04D0D72EC5A60FBB35045F573C20B725AAD49A6F77A5EC"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchFloorLuaBridge.class",
+      "Size": 729,
+      "Sha256": "E2121799EF8E0DAF0C9067D6B41FD481F47584DD230BA9D9B47A2FB6B305D674"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchFloorRegistration.class",
+      "Size": 986,
+      "Sha256": "CC45342AFA43D21790228755D14CBD19C124C0F415043BA1B2C1817C5CC4998B"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchFloorRemoteLoad.class",
+      "Size": 1139,
+      "Sha256": "1728B28E6C26E2ABDE15CF1CE0207EDEC98F3D9E4DC2A7058FFB5DCBF7AB1641"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchFloorTransmit.class",
+      "Size": 931,
+      "Sha256": "45337FFA01A11ED439361E1840974B8EB3D245F3621AE8717E720840F720B6DF"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchModFolderSnapshot.class",
+      "Size": 1230,
+      "Sha256": "956D0371519D673D2F59D1A8C823A243C5C8A518F34E9F390F96AD1CD1FF9068"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchModelScriptCheckMesh.class",
+      "Size": 1010,
+      "Sha256": "C590AF64833CC704A3CBF807E1C3E4143A58AA363407DA7A4EDFBE29461575CC"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchModelScriptCheckModel.class",
+      "Size": 1042,
+      "Sha256": "FC305B7258DE6CE0922F30B621684C1AA4715DB97013A0624F419C6234620D7E"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchMultiplayerTranslationModOrder.class",
+      "Size": 1314,
+      "Sha256": "5D3AD1DB3B8F27788A350C26954BF2F15001F6D50880E68BC867F4C280F321DF"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchNetChecksumNullPath.class",
+      "Size": 1018,
+      "Sha256": "D9E791DDE4FA4B3E19D85DABE51B108CDD4162FC083394FE0173A5FD7AE8E8F5"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchResetModFolders.class",
+      "Size": 965,
+      "Sha256": "43D2D1ADACD2CB008060F924D4C27DE026603AA6E9FD275921D3121B13C3BF25"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchScriptManagerSearchFolders.class",
+      "Size": 1070,
+      "Sha256": "C4A8194067806A362571EDAA793AF98B6EA5AE403580D5E607F518DF148E88C2"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchServerHeadlessIconWarning.class",
+      "Size": 1065,
+      "Sha256": "6A8FDB6D6AB0479CDA7BEE6070492EAD773C8F390D4B2D5B8E55A87528A25374"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchValidatePrefix.class",
+      "Size": 1162,
+      "Sha256": "F02395B09BF60DEB668175AF59A7ADCCAD626F4846226F43C0E45FD7EAE5D88C"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/ScriptScanPath.class",
+      "Size": 1400,
+      "Sha256": "56BFBFE10A43B8D1A71AC1EF048A10D20D5F7E44507664D7E607EFE968EC437A"
+    }
+  ],
+  "Dependencies": [
+    {
+      "Path": "projectzomboid.jar",
+      "Size": 65682033,
+      "Sha256": "E1A69EB743EDE60B213A0FE7F8B83D4FCAB773036D256CC4543A336F3B058A33"
+    },
+    {
+      "Path": "ZombieBuddy.jar",
+      "Size": 12491692,
+      "Sha256": "79120880FDA051718082BD9BF0C2C2B639450AE73641FDB4631750221A57B208"
+    }
+  ]
+}

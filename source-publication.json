@@ -1,0 +1,214 @@
+{
+  "SchemaVersion": 1,
+  "Project": "Build42ConsoleFixes",
+  "Repository": "antikristianos/Build42ConsoleFixes",
+  "Branch": "main",
+  "Tag": "v1.8",
+  "ModVersion": "1.8",
+  "CollectionVersion": null,
+  "WorkshopId": 3778165486,
+  "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778165486",
+  "UploadManifestSha256": "0A5FDF3976CAE95A69AA1AA57CC18215881E9BE447CB487EC24D83F2976C355E",
+  "Artifact": {
+    "Path": "mods/Build42ConsoleFixes/42.20/media/java/Build42ConsoleFixes.jar",
+    "Size": 44715,
+    "Sha256": "5D00E2755082F9FDBF21AA702957310CEB657DF252B9DE2832BA7B25C4C321B0"
+  },
+  "Sources": [
+    {
+      "Path": ".gitignore",
+      "Size": 8,
+      "Sha256": "020C2606E8ED484089C2083E0BE438B9D0736BEE1558A6B76AF0D58BD23F69CF"
+    },
+    {
+      "Path": "MANIFEST.MF",
+      "Size": 226,
+      "Sha256": "0E31ADADA06D70F4B18A2D317F2E258FA50CF96782F6F72792853BCBC8E8105E"
+    },
+    {
+      "Path": "README.md",
+      "Size": 1276,
+      "Sha256": "5194D44FA65A45FBBA93ED8155F2032563837C198260398916D1C5CAAE189DA9"
+    },
+    {
+      "Path": "build.json",
+      "Size": 7343,
+      "Sha256": "70739EE1E63AF2EF3BDD799B8CCB4D1ECE440D6817811EEA3143641CB2363AE7"
+    },
+    {
+      "Path": "build.ps1",
+      "Size": 2600,
+      "Sha256": "8389B7B0B5515387FA5D9B3989FED7C8629DA7762817C03AD266B69DE5B2B0FD"
+    },
+    {
+      "Path": "runtime/42.20/media/lua/client/Build42ConsoleFixes/ModLoadOrder.lua",
+      "Size": 1288,
+      "Sha256": "53EC54E965A7D739A8140EB1E87E052380A4F9C0C1DDEE9903CADDE10EAE6C55"
+    },
+    {
+      "Path": "runtime/42.20/media/lua/server/Build42ConsoleFixes/FloorPlacement.lua",
+      "Size": 955,
+      "Sha256": "A1587CE1BA3187614456A937F3D114814C8F813384DA9D207D93ACEE3DCDC01A"
+    },
+    {
+      "Path": "runtime/42.20/mod.info",
+      "Size": 549,
+      "Sha256": "06A6626D33D9CA923A249413B330E8AF81AFE03B157E5326E39B5B8F00B1805D"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/CoopServerJvmArguments.java",
+      "Size": 3788,
+      "Sha256": "CB477234560996F0384042FD16754216EFBD7847C63B7A6FDFDBF19F52B4D0EB"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/CoopWorkshopAgent.java",
+      "Size": 978,
+      "Sha256": "B5D9CFC5B1AB10808CFCC0FB42442B902DAC9174D558950AB1FFC7D9F185DA07"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/CoopWorkshopClient.java",
+      "Size": 6925,
+      "Sha256": "0C11EE6FA842D4B2EC35F65B894D9522825C508F62A125363C05CD997182A277"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/CoopWorkshopFiles.java",
+      "Size": 2069,
+      "Sha256": "42532AAE96478FCD374A75CF2A22C701BD9B5B64FE2E351E04D6F630CAFB498C"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/CoopWorkshopHost.java",
+      "Size": 3080,
+      "Sha256": "9C8B49D926D878C6075A2C21D90A796F6B9F2AD8308E9422C47D8EEF78DBD4FD"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/CoopWorkshopLaunch.java",
+      "Size": 2912,
+      "Sha256": "2CB3A6BE706126218B32F3152AA05A76934536FD3DB28CCDB0C87AE3B21B4DAD"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/CoopWorkshopTransformer.java",
+      "Size": 3012,
+      "Sha256": "1D45C55858000E23B0E15BB89FBAB1519196BDB2E56D5D7F09DAA788420A5F63"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/FloorPlacement.java",
+      "Size": 10934,
+      "Sha256": "2D791653BD237468CF24A5A873460184FDB7FB37D8021AB1AE63B9128F3C7E1C"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/HeadlessWarningFilter.java",
+      "Size": 536,
+      "Sha256": "E70E1F1299F5493BFC5600A179D2592AB4CBC11375BB7D3A8051C85ED8C018DE"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/ModFolderScanGuard.java",
+      "Size": 1186,
+      "Sha256": "B1D263FDC6E79F53618B25912839CE3F75E21E8C437A14C3A77EE3FB0D401D0C"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/MultiplayerTranslationModOrder.java",
+      "Size": 615,
+      "Sha256": "05EE9D3A7B0AC02A5AE6E768EFFFF15AB77DCC5554E7900B4C81E5432CDEF634"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/OptionalDirectoryScan.java",
+      "Size": 392,
+      "Sha256": "47C2EF06AF54FF3966147D53216283D28889D77ADCEC89AAF9C617C18D662CEE"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchAdvancedAnimatorSearchFolders.java",
+      "Size": 1230,
+      "Sha256": "47A6FAFF441275791EF039DB7F361F0CFB4993C8290A36AFD7D1829E4B02F134"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchCoopMasterGarbageCollector.java",
+      "Size": 509,
+      "Sha256": "A63B3A126FD1A2243CEE675E7C3210F32A55C2488F80E5C26D34C4DA888F8ABB"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchCoopMasterUpdate.java",
+      "Size": 355,
+      "Sha256": "BCB3660BDAD0E7BBD7B1675CAAF74D75D33011E229F3D7C455F9DA4ACC82A507"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchFileSystemReset.java",
+      "Size": 502,
+      "Sha256": "A66B2D00A8BDAC3692E1E0D3B74A5BF432EA6F51DCE3448E280945F07638A790"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchFileSystemUpdate.java",
+      "Size": 505,
+      "Sha256": "E6C563A057367D4B29B8916F3D71FE82F4591A29401D18DA11E48028E984C49E"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchFloorLuaBridge.java",
+      "Size": 350,
+      "Sha256": "CDCE5FAA4F1EFCD3D30EA387ED01950DC5E4D8EFD16D970EFBAE8488672A41BE"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchFloorRegistration.java",
+      "Size": 494,
+      "Sha256": "1E42827FB48A785468C74A23AD651F017F47BDA1B5C1F9699CBC161DBE78A2CC"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchFloorRemoteLoad.java",
+      "Size": 616,
+      "Sha256": "BBC25055A1EE9D61FF75E4503C42ECA5B645DBE3562BDC9999D4551F52BC5D4D"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchFloorTransmit.java",
+      "Size": 438,
+      "Sha256": "F3052209A568FE58EE9E51BB1B335303C2F26BF77A2593DA894BD4E7E4D8D083"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchModFolderSnapshot.java",
+      "Size": 579,
+      "Sha256": "51DCF675B811A8B0F8CE8BB073F5B77689875D40C6FD1755F9835A44ECA58503"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchModelScriptCheckMesh.java",
+      "Size": 602,
+      "Sha256": "0EEC6B3990AB3BC8B8CB6F296DF572AE9C09C1320298B0D07CA5ACD1A80E094F"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchModelScriptCheckModel.java",
+      "Size": 653,
+      "Sha256": "A0E43E2081B645FBDF940F67442F920ED880501078546BAF4C3C89B8976A89C2"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchMultiplayerTranslationModOrder.java",
+      "Size": 749,
+      "Sha256": "6707C0BBA79DFB4984BA08233CF318E4F96DEFCD64AF5A9B92126220B9583538"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchNetChecksumNullPath.java",
+      "Size": 576,
+      "Sha256": "0DA89402D80033E60D7AE8F7A8AE2C9674749E4D2538D3A313B2596A726AEC8B"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchResetModFolders.java",
+      "Size": 512,
+      "Sha256": "EE4DB548D7E4088D5FF3A11D99FBB74EFCA30056A416ECBE1D02EB96D57B0809"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchScriptManagerSearchFolders.java",
+      "Size": 611,
+      "Sha256": "40C09DDE48A1CE1D7D142765E8B7FC09B2166C03CBA2F40A86145F09F8849371"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchServerHeadlessIconWarning.java",
+      "Size": 551,
+      "Sha256": "656F4432F11904C102E0ED01EFF410061509D8AC63EE85C352BDD196C8CAE47F"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchValidatePrefix.java",
+      "Size": 539,
+      "Sha256": "0C600FFA9E387BC833F67E91D38BB3C8A527231BBC8BABF8993E944EAF58F7D9"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/ScriptScanPath.java",
+      "Size": 1208,
+      "Sha256": "FE6735932A45BDC18D69503C0B5F7BBC96B687BA67980746E4AD4FF7EB9B6C5D"
+    }
+  ]
+}
