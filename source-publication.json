@@ -3,12 +3,12 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "wip",
-  "Tag": "wip-1.63",
+  "Tag": "wip-1.64",
   "ModVersion": "1.8.1",
-  "CollectionVersion": "1.63",
+  "CollectionVersion": "1.64",
   "WorkshopId": 3802764936,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802764936",
-  "UploadManifestSha256": "2DF2A9D193786BC163CE4EA9E9B6232EE0819F421B726E8CA65CB59859AB0AD7",
+  "UploadManifestSha256": "E62B8E2B4F740DC36F534BFD4140B7ED7918454ED930F7A73CB028DD35FC94F5",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes_WIP/42.22/media/java/Build42ConsoleFixes.jar",
     "Size": 35772,
@@ -33,7 +33,7 @@
     {
       "Path": "build.json",
       "Size": 6153,
-      "Sha256": "0992CD7CEBBE6C71EE51680665FA41A1F346BB537E5FC7924CA78106E7AEECC6"
+      "Sha256": "83F43193101E6A3789E964C7B4D1233B52D4F7EBD3DA12334ED4DA5E0272CDE9"
     },
     {
       "Path": "build.ps1",
