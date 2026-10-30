@@ -49,6 +49,21 @@
       "Sha256": "7C9CC0013F3266D863E666568E469B47F0F255AE7A3F5D5D06ED21AA750F02DB"
     },
     {
+      "Path": "antikristianos/build42consolefixes/HandItemDrop$DropScope.class",
+      "Size": 767,
+      "Sha256": "BB38B6C553E31623EFE91DF6CB1C73923F4E5FDD444438EDDEF94DFA616842D1"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/HandItemDrop$NpcSynchronization.class",
+      "Size": 1082,
+      "Sha256": "2E2243919626A0658628C47E9B489460D18F02076F9E41111DDB6322171BFA57"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/HandItemDrop.class",
+      "Size": 9309,
+      "Sha256": "52F2ABAAB9ABCDE99D0649C6813C6949E20570475B89A0D66B5CE96BF215530F"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/HeadlessWarningFilter.class",
       "Size": 614,
       "Sha256": "C608D892B5646FF379B58DFDC791F47B6F2C16117EC1EA8E81D51EACE7F516DB"
@@ -94,6 +109,21 @@
       "Sha256": "481FF4F38EB308076E04D0D72EC5A60FBB35045F573C20B725AAD49A6F77A5EC"
     },
     {
+      "Path": "antikristianos/build42consolefixes/PatchHandItemDrop.class",
+      "Size": 1761,
+      "Sha256": "5FD7C4F817DB8C95565080D9785E1E4AD5EE322E981BFE6A97211DA012BEE5DB"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchHandItemDropped.class",
+      "Size": 1583,
+      "Sha256": "E13F364D335E8F277055FE3AD55DFF55B7F79F0030CA48D4957EB2BC68DCE1A9"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchHandItemPreupdate.class",
+      "Size": 951,
+      "Sha256": "D15770E386AB074E6FCDD3CD47597E076293ADC52985FFC559BC8DEC4FF56B98"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/PatchModFolderSnapshot.class",
       "Size": 1230,
       "Sha256": "956D0371519D673D2F59D1A8C823A243C5C8A518F34E9F390F96AD1CD1FF9068"
@@ -132,6 +162,11 @@
       "Path": "antikristianos/build42consolefixes/PatchServerHeadlessIconWarning.class",
       "Size": 1065,
       "Sha256": "6A8FDB6D6AB0479CDA7BEE6070492EAD773C8F390D4B2D5B8E55A87528A25374"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchUpdateHandEquips.class",
+      "Size": 964,
+      "Sha256": "7ED6A242A0660A1D17A203ACA199B034784353584AF8E30425B01FDD2BD2B724"
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchValidatePrefix.class",
