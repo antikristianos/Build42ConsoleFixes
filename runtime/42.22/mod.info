@@ -7,6 +7,6 @@ require=\ZombieBuddy
 javaJarFile=media/java/Build42ConsoleFixes.jar
 javaPkgName=antikristianos.build42consolefixes
 ZBVersionMin=2.3.2
-modversion=1.8.2
+modversion=1.9.1
 versionMin=42.22.0
 incompatible=Build42ConsoleFixes

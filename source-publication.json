@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "wip",
-  "Tag": "wip-1.73",
-  "ModVersion": "1.8.2",
-  "CollectionVersion": "1.73",
+  "Tag": "wip-1.74",
+  "ModVersion": "1.9.1",
+  "CollectionVersion": "1.74",
   "WorkshopId": 3802764936,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802764936",
-  "UploadManifestSha256": "2ABF9D7AF3EF37A06138798DA34248FB098D85FDFBDB9DAA6B4D0E1EDC4D139D",
+  "UploadManifestSha256": "6635C9922F3B93194AD831FAE10CB92BFD22908005B4DCD304C78185535870CF",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes_WIP/42.22/media/java/Build42ConsoleFixes.jar",
-    "Size": 44570,
-    "Sha256": "4608430C5DB2061F73315C68612D3C6D378F3B5D26A48FADCC0571C0F5A89B65"
+    "Size": 49964,
+    "Sha256": "779B2B63ED657859535679D54146D8B57CCCFD3DE2B469A2F8F1F4DA09CF7291"
   },
   "Sources": [
     {
@@ -23,17 +23,17 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 228,
-      "Sha256": "E2DFD5FB3F4E2A6BD3322D5F235C8C66ED0F87297D973F05CB24160670C3F561"
+      "Sha256": "E14ECFA9A324C15E6B7D6948981E7DFD449C83FD9A92B98A63DC3669BE450F42"
     },
     {
       "Path": "README.md",
       "Size": 1459,
-      "Sha256": "6FEA219C0CE789B1864B8C52E0B59D28DF55D3D1201EC967FA5B7940C67B4A3D"
+      "Sha256": "1E144CA0C2699FAFB1232F2661EA789250ACDAB338903CC645ECBCA9047E84D3"
     },
     {
       "Path": "build.json",
-      "Size": 7555,
-      "Sha256": "5DE254EB5C533BCF6CA7E118D3CD7074D3BF2231F22899C903F5F71F38CD11CA"
+      "Size": 8375,
+      "Sha256": "045C019133D65808C00EDB4731B8BD66C2F43313DB72E8D7A89FBE33CFDF02E1"
     },
     {
       "Path": "build.ps1",
@@ -48,7 +48,7 @@
     {
       "Path": "runtime/42.22/mod.info",
       "Size": 529,
-      "Sha256": "0A94E71402D7FC4334DA7D9D29637F15EEB8434304EC4ABAA0951748E6B6EF46"
+      "Sha256": "88407D6FCDCDD3970511641E0AEF39AA4EE4E0A61737BB104364171D70CDFC87"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/CoopServerJvmArguments.java",
@@ -89,6 +89,11 @@
       "Path": "src/antikristianos/build42consolefixes/HandItemDrop.java",
       "Size": 8467,
       "Sha256": "FF1FD19D883FEAECA079317E477CF69D22C5AF353A3ABE1347F95BA865CF643B"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/HandcraftBenchReference.java",
+      "Size": 5077,
+      "Sha256": "BD8AA347D4C6BE65EE9C9859E980D1305E47EF3D7CFB791D14AE94684249E7C4"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/HeadlessWarningFilter.java",
@@ -149,6 +154,16 @@
       "Path": "src/antikristianos/build42consolefixes/PatchHandItemPreupdate.java",
       "Size": 487,
       "Sha256": "318079D766B61E34A3F706D59B1CE3B248D4D218B13D6814B76ADEDE527EF1F8"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchHandcraftBenchLoad.java",
+      "Size": 1267,
+      "Sha256": "97EA1770795EFA916CC06B1DE8BE246998BFC16EA03FEA5EBCF83BA0A584C92B"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchHandcraftRequestParse.java",
+      "Size": 935,
+      "Sha256": "A7AC0EA728F74C89560BF2341116F4DA6BF15894C04D3B3D9E64E4CB0001E068"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchModFolderSnapshot.java",
