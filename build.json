@@ -4,6 +4,11 @@
   "AdditionalClasspath": [],
   "Entries": [
     {
+      "Path": "antikristianos/build42consolefixes/ActiveModSelection.class",
+      "Size": 2710,
+      "Sha256": "1E548657DADBB4B3DCD9CAA115316FF146E48EC4E4F6B7DB5174F31A392C1807"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/CoopServerJvmArguments.class",
       "Size": 5638,
       "Sha256": "ADFFBFA8E9312182ED3A2627DBFBAAB1A1D121FF741B81E267AF9C62D28B1A4D"
@@ -64,6 +69,16 @@
       "Sha256": "52F2ABAAB9ABCDE99D0649C6813C6949E20570475B89A0D66B5CE96BF215530F"
     },
     {
+      "Path": "antikristianos/build42consolefixes/HandcraftBenchReference$Scope.class",
+      "Size": 816,
+      "Sha256": "71AF4B9C61E98066B1083D7BA495982FF732EA18FE01307C53D06EAC9A5B7326"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/HandcraftBenchReference.class",
+      "Size": 5215,
+      "Sha256": "6FBDA1405CABCBFF473ECA7ECA7CCE7D75224DC8F85894AB1DF90867847A4416"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/HeadlessWarningFilter.class",
       "Size": 614,
       "Sha256": "C608D892B5646FF379B58DFDC791F47B6F2C16117EC1EA8E81D51EACE7F516DB"
@@ -82,6 +97,11 @@
       "Path": "antikristianos/build42consolefixes/OptionalDirectoryScan.class",
       "Size": 517,
       "Sha256": "20CD7464633EC88DEA29CDB11DD4ADAA3B62D9E126F28BD6D58E9F52AF198ECA"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchActiveModsResetLua.class",
+      "Size": 1169,
+      "Sha256": "FC29DEBBC5BD9B720B1AAC4FA7BB84CD4468A5924BF828F53860E306CD510CBB"
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchAdvancedAnimatorSearchFolders.class",
@@ -122,6 +142,16 @@
       "Path": "antikristianos/build42consolefixes/PatchHandItemPreupdate.class",
       "Size": 951,
       "Sha256": "D15770E386AB074E6FCDD3CD47597E076293ADC52985FFC559BC8DEC4FF56B98"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchHandcraftBenchLoad.class",
+      "Size": 1937,
+      "Sha256": "A1103236ABD1111596059BFBADC5890F88B865A1350D988D85E286EDEFEDDA1C"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchHandcraftRequestParse.class",
+      "Size": 1835,
+      "Sha256": "78C08B405C034CB45A095BC478E0AEE351AD2549F6E90A48D7D766EDC681F25F"
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchModFolderSnapshot.class",
