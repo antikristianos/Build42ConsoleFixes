@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "wip",
-  "Tag": "wip-1.75",
-  "ModVersion": "1.9.1",
-  "CollectionVersion": "1.75",
+  "Tag": "wip-1.76",
+  "ModVersion": "1.9.2",
+  "CollectionVersion": "1.76",
   "WorkshopId": 3802764936,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802764936",
-  "UploadManifestSha256": "3A975FDAA17BB02AF6BE238FF02004C5A81840AC91A3C89535933377FFEB6846",
+  "UploadManifestSha256": "EEAC04EE679BC39DFF347091D26442A2835597F06DDC069A11482CD3469C1470",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes_WIP/42.22/media/java/Build42ConsoleFixes.jar",
-    "Size": 49964,
-    "Sha256": "779B2B63ED657859535679D54146D8B57CCCFD3DE2B469A2F8F1F4DA09CF7291"
+    "Size": 52375,
+    "Sha256": "98E25CDEF6B6DF4F1EFEFDDD0A1E25817D30D09209B5FDBB66F853E8EFDA9786"
   },
   "Sources": [
     {
@@ -23,17 +23,17 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 228,
-      "Sha256": "E14ECFA9A324C15E6B7D6948981E7DFD449C83FD9A92B98A63DC3669BE450F42"
+      "Sha256": "D301816ECBC8B09B29537C43266F1660FFBE632EEF05691F8C3977A4799DD1EA"
     },
     {
       "Path": "README.md",
       "Size": 1459,
-      "Sha256": "1E144CA0C2699FAFB1232F2661EA789250ACDAB338903CC645ECBCA9047E84D3"
+      "Sha256": "603C07C99E73E56031E163F1018E662BC468371A6CCDF1D2C5D58911B6E9E104"
     },
     {
       "Path": "build.json",
-      "Size": 8375,
-      "Sha256": "045C019133D65808C00EDB4731B8BD66C2F43313DB72E8D7A89FBE33CFDF02E1"
+      "Size": 8776,
+      "Sha256": "05FA98F58F603A87C8E90610B39EFA97550B19BC455C0D1A142EFE84D6F117BA"
     },
     {
       "Path": "build.ps1",
@@ -48,7 +48,12 @@
     {
       "Path": "runtime/42.22/mod.info",
       "Size": 529,
-      "Sha256": "88407D6FCDCDD3970511641E0AEF39AA4EE4E0A61737BB104364171D70CDFC87"
+      "Sha256": "25FEAFF205FC5B5B6CE698300CD01D57810A84F9F9CB047F923DE6AEA53FFF74"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",
+      "Size": 1818,
+      "Sha256": "420D3A7B7FCB3735E6D692D360823B4239406D1BCA4E51D0CE9128D6B2D08C6E"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/CoopServerJvmArguments.java",
@@ -114,6 +119,11 @@
       "Path": "src/antikristianos/build42consolefixes/OptionalDirectoryScan.java",
       "Size": 392,
       "Sha256": "47C2EF06AF54FF3966147D53216283D28889D77ADCEC89AAF9C617C18D662CEE"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchActiveModsResetLua.java",
+      "Size": 583,
+      "Sha256": "58B7AFE3F7EA733E1EBC95CCB053F65052BE0C4714916B29C142AF6A9D0444B7"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchAdvancedAnimatorSearchFolders.java",

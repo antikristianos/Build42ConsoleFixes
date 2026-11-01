@@ -4,6 +4,11 @@
   "AdditionalClasspath": [],
   "Entries": [
     {
+      "Path": "antikristianos/build42consolefixes/ActiveModSelection.class",
+      "Size": 2710,
+      "Sha256": "1E548657DADBB4B3DCD9CAA115316FF146E48EC4E4F6B7DB5174F31A392C1807"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/CoopServerJvmArguments.class",
       "Size": 5638,
       "Sha256": "ADFFBFA8E9312182ED3A2627DBFBAAB1A1D121FF741B81E267AF9C62D28B1A4D"
@@ -92,6 +97,11 @@
       "Path": "antikristianos/build42consolefixes/OptionalDirectoryScan.class",
       "Size": 517,
       "Sha256": "20CD7464633EC88DEA29CDB11DD4ADAA3B62D9E126F28BD6D58E9F52AF198ECA"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchActiveModsResetLua.class",
+      "Size": 1169,
+      "Sha256": "FC29DEBBC5BD9B720B1AAC4FA7BB84CD4468A5924BF828F53860E306CD510CBB"
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchAdvancedAnimatorSearchFolders.class",

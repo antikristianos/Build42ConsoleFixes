@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Implementation-Title: Build 42 Console Fixes
-Implementation-Version: 1.9.1
+Implementation-Version: 1.9.2
 Build-Jdk-Spec: 17
 Premain-Class: antikristianos.build42consolefixes.CoopWorkshopAgent
 Created-By: 25 (Oracle Corporation)
