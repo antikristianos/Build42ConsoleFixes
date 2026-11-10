@@ -1,13 +1,13 @@
 name=[B42] Console Fixes
 id=Build42ConsoleFixes
 author=Antikristianos
-description=Focused Build 42.20 ZombieBuddy fixes for optional-animation scanner errors, checksum null paths, local-coop mod ordering, and headless-only model, mesh, and XUI diagnostics without hiding real content errors.
+description=Build 42.22 Vanilla fixes for local Coop and Workshop startup, mod discovery and diagnostics, workbench crafting, mod selection reloads, and resolution-scaled character speech and action progress bars.
 icon=../common/icon.png
 require=\ZombieBuddy
 javaJarFile=media/java/Build42ConsoleFixes.jar
 javaPkgName=antikristianos.build42consolefixes
 ZBVersionMin=2.3.2
-modversion=1.10
+modversion=1.11
 versionMin=42.22.0
 incompatible=Build42ConsoleFixes_WIP
 poster=../common/poster.png

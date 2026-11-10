@@ -99,6 +99,36 @@
       "Sha256": "20CD7464633EC88DEA29CDB11DD4ADAA3B62D9E126F28BD6D58E9F52AF198ECA"
     },
     {
+      "Path": "antikristianos/build42consolefixes/OverheadDisplayScale$Bar.class",
+      "Size": 709,
+      "Sha256": "17F7F4197E3835F6A03EB4BBC747B6808B5DBEB2B15DE5F27A7CE83BE521AEAE"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/OverheadDisplayScale$ImageSize.class",
+      "Size": 498,
+      "Sha256": "73CC032ABC3406DE1350D43EB46627AC5208537C0DE4723D7B02A0BAAE94F37B"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/OverheadDisplayScale$Metrics.class",
+      "Size": 494,
+      "Sha256": "22846C0B0D2A7AC15383D7D5B9C5DAA6EC959C26EA72F11E511F74E3C9541175"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/OverheadDisplayScale$Scope.class",
+      "Size": 484,
+      "Sha256": "C36350D373608E69C54F87CD6CAD2031D881EF7441D87BDE24D498E1598A9C9F"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/OverheadDisplayScale$Slice.class",
+      "Size": 598,
+      "Sha256": "99C29C50A895590682EAA964D21A13E17C8897055D6A32C406530D6E75849FF8"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/OverheadDisplayScale.class",
+      "Size": 8441,
+      "Sha256": "511750E2DB72D2D8D854B1CB62FC8E9F16974B3DDCE87494842FB1AA957C48DE"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/PatchActiveModsResetLua.class",
       "Size": 1169,
       "Sha256": "FC29DEBBC5BD9B720B1AAC4FA7BB84CD4468A5924BF828F53860E306CD510CBB"
@@ -179,6 +209,51 @@
       "Sha256": "D9E791DDE4FA4B3E19D85DABE51B108CDD4162FC083394FE0173A5FD7AE8E8F5"
     },
     {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadBarPosition.class",
+      "Size": 1108,
+      "Sha256": "D19D3780C8B96AD55C09F806E5E2A24DEE942EB8279F83A546375F003B0DF406"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadBarTexture.class",
+      "Size": 1646,
+      "Sha256": "9A9BFA66F492B6D1698F7B49B17A2F4E2D5B42359964AF2CBC8B890281982D17"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadChat.class",
+      "Size": 1365,
+      "Sha256": "54C99C96D4BA04BCCA38A179A4AD927EB7ACA9340A6315575DBE07579F4C5D3D"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadFont.class",
+      "Size": 1425,
+      "Sha256": "8B72789EAAD05126879B50EBFB745958C121C69D1769467EFF1A6BF359B6188B"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadHeight.class",
+      "Size": 1086,
+      "Sha256": "5C441C09BB921FB918A0DD701CAF36DD2E2886F5FE8F77AA74D643BACD536A57"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadImage.class",
+      "Size": 1737,
+      "Sha256": "1A06F84D9CAA41A594AC0D74DA5F1506AAA79954FD0E30FA7086251E96E4BB12"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadSession.class",
+      "Size": 746,
+      "Sha256": "F50912A6907C362FA0A2C1176DE374482C9E707FD90398F27FE50BCBAEE462F3"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadText.class",
+      "Size": 1489,
+      "Sha256": "9B55918FAEF4CB352BB18385F38088FC4D7C43D57D939BEE80270858689D9B1B"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchOverheadWidth.class",
+      "Size": 1083,
+      "Sha256": "352A294B8F8E8E14649A14DE7532D31E32526478E04076A10CF62BC8C51B6574"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/PatchResetModFolders.class",
       "Size": 965,
       "Sha256": "43D2D1ADACD2CB008060F924D4C27DE026603AA6E9FD275921D3121B13C3BF25"
@@ -212,8 +287,8 @@
   "Dependencies": [
     {
       "Path": "projectzomboid.jar",
-      "Size": 66254409,
-      "Sha256": "90C54B84EBC160AE053CBEFE30C7713826CA4FDB4934FDE53C9EBDE0FF9892F3"
+      "Size": 68815659,
+      "Sha256": "3C4A7C5F149D784758C6FB5F8FA85F3A21D572E38BC081400E89035F8120D287"
     },
     {
       "Path": "ZombieBuddy.jar",
