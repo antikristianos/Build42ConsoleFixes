@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "wip",
-  "Tag": "wip-1.91",
-  "ModVersion": "1.9.2",
-  "CollectionVersion": "1.91",
+  "Tag": "wip-1.92",
+  "ModVersion": "1.10.1",
+  "CollectionVersion": "1.92",
   "WorkshopId": 3802764936,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802764936",
-  "UploadManifestSha256": "F5582E9BB4B228160CC1DCAD1DAED8BD1E6C916A577E0CD9614EF15EF54B7997",
+  "UploadManifestSha256": "F1EFE513104636A6F470ABEFA23D835EF86F41CA0EFDBB84787B135D79FC1AA7",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes_WIP/42.22/media/java/Build42ConsoleFixes.jar",
-    "Size": 52375,
-    "Sha256": "98E25CDEF6B6DF4F1EFEFDDD0A1E25817D30D09209B5FDBB66F853E8EFDA9786"
+    "Size": 67018,
+    "Sha256": "D2795C9C367B413160ED363EF35C1D29A97DEA80F0BE01CCA7D8565913212080"
   },
   "AdditionalArtifacts": [],
   "Sources": [
@@ -23,18 +23,18 @@
     },
     {
       "Path": "MANIFEST.MF",
-      "Size": 228,
-      "Sha256": "D301816ECBC8B09B29537C43266F1660FFBE632EEF05691F8C3977A4799DD1EA"
+      "Size": 229,
+      "Sha256": "3014C3ABF4F14F43696C1EFDD79AFCAFF66876E0D1FD837E6BFE1E08EEBA83AB"
     },
     {
       "Path": "README.md",
-      "Size": 1459,
-      "Sha256": "603C07C99E73E56031E163F1018E662BC468371A6CCDF1D2C5D58911B6E9E104"
+      "Size": 1460,
+      "Sha256": "23D6FA2B6E4EEFC983F803DCAEBA6D27C833E2340872AE0041D4F77B71FC709F"
     },
     {
       "Path": "build.json",
-      "Size": 8776,
-      "Sha256": "C9BF9F230E00912097E19646FAA757CB9FD3ED65D85092B5746546B4795F5952"
+      "Size": 11797,
+      "Sha256": "CADF8AF7556316DCECAF8B237A32F2197482B682332A303A69E5EED7CB47F844"
     },
     {
       "Path": "build.ps1",
@@ -48,8 +48,8 @@
     },
     {
       "Path": "runtime/42.22/mod.info",
-      "Size": 529,
-      "Sha256": "25FEAFF205FC5B5B6CE698300CD01D57810A84F9F9CB047F923DE6AEA53FFF74"
+      "Size": 530,
+      "Sha256": "C9580E7314E3A10F38EE3D717ECF2B1D491F7BB7256CABF86C2BA27BD2E78307"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",
@@ -120,6 +120,11 @@
       "Path": "src/antikristianos/build42consolefixes/OptionalDirectoryScan.java",
       "Size": 392,
       "Sha256": "47C2EF06AF54FF3966147D53216283D28889D77ADCEC89AAF9C617C18D662CEE"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/OverheadDisplayScale.java",
+      "Size": 7866,
+      "Sha256": "6168A4242B555ED91BE133D667193B229C3088081301AB13AA90C82F3ACDDA97"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchActiveModsResetLua.java",
@@ -200,6 +205,51 @@
       "Path": "src/antikristianos/build42consolefixes/PatchNetChecksumNullPath.java",
       "Size": 576,
       "Sha256": "0DA89402D80033E60D7AE8F7A8AE2C9674749E4D2538D3A313B2596A726AEC8B"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadBarPosition.java",
+      "Size": 514,
+      "Sha256": "7408B0EE20A77C2E5E8EE03DC3E349A5FE1A72742A0FC7CAFFB01F5899740572"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadBarTexture.java",
+      "Size": 1187,
+      "Sha256": "7D85B975757ECDB5F4731C029C3084878594B974FE303B75D9E5CF17A7398BF6"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadChat.java",
+      "Size": 643,
+      "Sha256": "B3FF8B73A1ADC800889ADE4E218FAC6C5F068EB25952BA8CF1993363F9AF0B81"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadFont.java",
+      "Size": 913,
+      "Sha256": "0D6B14ED73AC007E4763E51C729BC09D10F16B81FF29E5C537984D9D2FCE84A3"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadHeight.java",
+      "Size": 505,
+      "Sha256": "311DFD90DAD28F64B5FD883B927C0525267EF5CB161CAF6201E85F126771B709"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadImage.java",
+      "Size": 1302,
+      "Sha256": "517D98A541278F3325696D29143B3E9075CEFBF5CBB0EBD4FEB3CD309B48018E"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadSession.java",
+      "Size": 373,
+      "Sha256": "E2613614A7E215CBDD3051DCE77D40139E4ECA39B700C8550769DC7CF58D8C42"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadText.java",
+      "Size": 948,
+      "Sha256": "6224E1E84576A6BC7A51789A62BFF36A65C3132481289B948595DA67F58779AD"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchOverheadWidth.java",
+      "Size": 501,
+      "Sha256": "E321FE061C6B5C1F139A3FF32F802CDF457B24B30C733FFAF144F15378F5F0B4"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchResetModFolders.java",
