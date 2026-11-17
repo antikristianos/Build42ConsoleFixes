@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "main",
-  "Tag": "v1.11",
-  "ModVersion": "1.11",
+  "Tag": "v1.12",
+  "ModVersion": "1.12",
   "CollectionVersion": null,
   "WorkshopId": 3778165486,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778165486",
-  "UploadManifestSha256": "5372536E6C407EF5A4F3AD6455EA622B2DEF8166A04BBF3F82074100EC495F7D",
+  "UploadManifestSha256": "F95153C344F9AF87B95AD555316E4B2758B3C2FE72864B855689C12A0BE2773D",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes/42.22/media/java/Build42ConsoleFixes.jar",
     "Size": 67016,
-    "Sha256": "80C963B70EA3BDCB3FCF52D70E79DA46C49550214ABC5EDBC3D35C4743C1CE79"
+    "Sha256": "F374E9E8A8D6935F23849D8DAC7A96A3EB0723DDB43E089A3FFE5AFD4F1BB0E7"
   },
   "AdditionalArtifacts": [],
   "Sources": [
@@ -24,12 +24,12 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 227,
-      "Sha256": "8E2788DA4B0838A6D35F6E57D14F3EF9FCF887A311358054A3CAD13AA5A5CAF1"
+      "Sha256": "F41CE7C8B4ACACECE388F680CCE30240810AED4F393EA84C808CEF95BBFAEDD1"
     },
     {
       "Path": "README.md",
       "Size": 1454,
-      "Sha256": "08761A36E5217A646D4505B1927802AE175564DD0D65F5E01084FA81C99113B3"
+      "Sha256": "7DDD3A98B9E418D952855228071197C8AAA37A7D36AC089CDBF6C33B3BB1E2F4"
     },
     {
       "Path": "build.json",
@@ -43,13 +43,13 @@
     },
     {
       "Path": "runtime/42.22/media/lua/client/Build42ConsoleFixes/ModLoadOrder.lua",
-      "Size": 1288,
-      "Sha256": "53EC54E965A7D739A8140EB1E87E052380A4F9C0C1DDEE9903CADDE10EAE6C55"
+      "Size": 3334,
+      "Sha256": "5F8BE8B00A63D13BD8A62F69B3174F8724311F16AC4E0DEB64DCF8735C4BBF59"
     },
     {
       "Path": "runtime/42.22/mod.info",
-      "Size": 542,
-      "Sha256": "4E3F8A1748B57D7AB0CEFB1B7A7D5DDA1A24C6524AC18642AEDCD27C1D079B68"
+      "Size": 550,
+      "Sha256": "68C6EE464023E13A0779C3EB76945B8C06FCB18B239FF9944E3ECE544BCC1BD3"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",
