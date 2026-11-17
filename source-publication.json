@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "wip",
-  "Tag": "wip-1.102",
-  "ModVersion": "1.10.1",
-  "CollectionVersion": "1.102",
+  "Tag": "wip-1.108",
+  "ModVersion": "1.11.1",
+  "CollectionVersion": "1.108",
   "WorkshopId": 3802764936,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802764936",
-  "UploadManifestSha256": "85475D820DB5830357B557617166E6F0E3D647E72BCD32513FB947872DEE6E3C",
+  "UploadManifestSha256": "787B5F227295F14DC861E207A8BD31FBA4696C73D10BE46CE510F8DC5D46F9D5",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes_WIP/42.22/media/java/Build42ConsoleFixes.jar",
-    "Size": 67018,
-    "Sha256": "D2795C9C367B413160ED363EF35C1D29A97DEA80F0BE01CCA7D8565913212080"
+    "Size": 67017,
+    "Sha256": "A09B570D546D5FBEBE4F336FD974C2FF516BEE802CC9FF691BEE4C57C97D2297"
   },
   "AdditionalArtifacts": [],
   "Sources": [
@@ -24,12 +24,12 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 229,
-      "Sha256": "3014C3ABF4F14F43696C1EFDD79AFCAFF66876E0D1FD837E6BFE1E08EEBA83AB"
+      "Sha256": "45435A303997AA8179978018B89F564CA1FB35DF29980953EE82E394527A67FE"
     },
     {
       "Path": "README.md",
       "Size": 1460,
-      "Sha256": "23D6FA2B6E4EEFC983F803DCAEBA6D27C833E2340872AE0041D4F77B71FC709F"
+      "Sha256": "C5750DC95B32E9CE7A7A42E78822EC913E85812C8E0EAA2CE588E9E9BA51767C"
     },
     {
       "Path": "build.json",
@@ -43,13 +43,13 @@
     },
     {
       "Path": "runtime/42.22/media/lua/client/Build42ConsoleFixes/ModLoadOrder.lua",
-      "Size": 1288,
-      "Sha256": "53EC54E965A7D739A8140EB1E87E052380A4F9C0C1DDEE9903CADDE10EAE6C55"
+      "Size": 3334,
+      "Sha256": "5F8BE8B00A63D13BD8A62F69B3174F8724311F16AC4E0DEB64DCF8735C4BBF59"
     },
     {
       "Path": "runtime/42.22/mod.info",
       "Size": 530,
-      "Sha256": "C9580E7314E3A10F38EE3D717ECF2B1D491F7BB7256CABF86C2BA27BD2E78307"
+      "Sha256": "E668F982C9B5795385475E2A8F2459EB364217C23CDB6BCF66DD0916B62C09E0"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",

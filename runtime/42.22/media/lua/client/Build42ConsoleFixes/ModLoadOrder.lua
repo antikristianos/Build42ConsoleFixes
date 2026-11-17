@@ -10,6 +10,75 @@ end
 
 local originalAutoSort = modLoadOrderPanel.autoSort
 
+local function prioritizeZombieBuddy(items)
+    local rowsById = {}
+    for _, row in ipairs(items) do
+        rowsById[row.item.modId] = row
+    end
+    local buddy = rowsById.ZombieBuddy
+    if not buddy then
+        return
+    end
+
+    local requirements = {}
+    local dependents = {}
+    for _, row in ipairs(items) do
+        local id = row.item.modId
+        local required = row.item.modInfo:getRequire()
+        requirements[id] = {}
+        if required then
+            for index = 0, required:size() - 1 do
+                local dependency = required:get(index)
+                if rowsById[dependency] then
+                    table.insert(requirements[id], dependency)
+                    dependents[dependency] = dependents[dependency] or {}
+                    table.insert(dependents[dependency], id)
+                end
+            end
+        end
+    end
+
+    local group = {ZombieBuddy = true}
+    local queue = {"ZombieBuddy"}
+    local function include(id)
+        if not group[id] then
+            group[id] = true
+            queue[#queue + 1] = id
+        end
+    end
+    -- Follow required dependencies only; optional load-order hints are not dependencies.
+    local index = 1
+    while index <= #queue do
+        for _, id in ipairs(dependents[queue[index]] or {}) do
+            include(id)
+        end
+        index = index + 1
+    end
+    -- Keep any other required libraries ahead of the mods that need them.
+    index = 1
+    while index <= #queue do
+        for _, id in ipairs(requirements[queue[index]]) do
+            include(id)
+        end
+        index = index + 1
+    end
+
+    local ordered = {buddy}
+    for _, row in ipairs(items) do
+        if row ~= buddy and group[row.item.modId] then
+            ordered[#ordered + 1] = row
+        end
+    end
+    for _, row in ipairs(items) do
+        if not group[row.item.modId] then
+            ordered[#ordered + 1] = row
+        end
+    end
+    for position, row in ipairs(ordered) do
+        items[position] = row
+    end
+end
+
 local function autoSort(self, ...)
     originalAutoSort(self, ...)
 
@@ -35,6 +104,7 @@ local function autoSort(self, ...)
             items[sourceIndex] = nil
         end
     end
+    prioritizeZombieBuddy(items)
 end
 
 modLoadOrderPanel.autoSort = autoSort
