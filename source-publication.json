@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "main",
-  "Tag": "v1.12",
-  "ModVersion": "1.12",
+  "Tag": "v1.13",
+  "ModVersion": "1.13",
   "CollectionVersion": null,
   "WorkshopId": 3778165486,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778165486",
-  "UploadManifestSha256": "F95153C344F9AF87B95AD555316E4B2758B3C2FE72864B855689C12A0BE2773D",
+  "UploadManifestSha256": "FF319F6FFDA92418CFE4AC43BC39E217D5B13A46EB3F741F7F0CC6A001BE6472",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes/42.22/media/java/Build42ConsoleFixes.jar",
-    "Size": 67016,
-    "Sha256": "F374E9E8A8D6935F23849D8DAC7A96A3EB0723DDB43E089A3FFE5AFD4F1BB0E7"
+    "Size": 69650,
+    "Sha256": "0D321606881405EEFF7477A7117D2C08AA7CAC677E2758E7B39910C9C2B5B485"
   },
   "AdditionalArtifacts": [],
   "Sources": [
@@ -24,17 +24,17 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 227,
-      "Sha256": "F41CE7C8B4ACACECE388F680CCE30240810AED4F393EA84C808CEF95BBFAEDD1"
+      "Sha256": "60228DCFD1C5A884C4D44A0F508B5FF2B89DFEEB9AFD818DB151B14917CE544E"
     },
     {
       "Path": "README.md",
       "Size": 1454,
-      "Sha256": "7DDD3A98B9E418D952855228071197C8AAA37A7D36AC089CDBF6C33B3BB1E2F4"
+      "Sha256": "41B2B48476C6D2DE012238573F4A6536776D96C6EB78D84DB2B159E015FBA4E2"
     },
     {
       "Path": "build.json",
-      "Size": 11797,
-      "Sha256": "CADF8AF7556316DCECAF8B237A32F2197482B682332A303A69E5EED7CB47F844"
+      "Size": 12212,
+      "Sha256": "CC8E4FAF380ABA39B1DB6EF057E3B7EA229191EBE1DB3803432E1C5937721E7C"
     },
     {
       "Path": "build.ps1",
@@ -48,8 +48,8 @@
     },
     {
       "Path": "runtime/42.22/mod.info",
-      "Size": 550,
-      "Sha256": "68C6EE464023E13A0779C3EB76945B8C06FCB18B239FF9944E3ECE544BCC1BD3"
+      "Size": 620,
+      "Sha256": "B738A777ED49D9FD04C7B6A60AFB1BFB4A6E02FFE9093D96FAB502233B5640FD"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",
@@ -277,9 +277,19 @@
       "Sha256": "0C600FFA9E387BC833F67E91D38BB3C8A527231BBC8BABF8993E944EAF58F7D9"
     },
     {
+      "Path": "src/antikristianos/build42consolefixes/PatchVehicleStartAuthorization.java",
+      "Size": 559,
+      "Sha256": "BC405444C36E36976CCA81E1E36D63D1D78E24D42D1F10FFCFE50EEF9CC5BCCB"
+    },
+    {
       "Path": "src/antikristianos/build42consolefixes/ScriptScanPath.java",
       "Size": 1208,
       "Sha256": "FE6735932A45BDC18D69503C0B5F7BBC96B687BA67980746E4AD4FF7EB9B6C5D"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/VehicleStartAuthorization.java",
+      "Size": 2430,
+      "Sha256": "9E7097F8B36D811CDEFCDA756FE41383272F2075D3C2309A51A7E090B712B73F"
     }
   ]
 }
