@@ -279,9 +279,19 @@
       "Sha256": "F02395B09BF60DEB668175AF59A7ADCCAD626F4846226F43C0E45FD7EAE5D88C"
     },
     {
+      "Path": "antikristianos/build42consolefixes/PatchVehicleStartAuthorization.class",
+      "Size": 1105,
+      "Sha256": "46D8F47CCAB2F75A4336F44A957671D55BA79D2412AD7100ECCD3061B249FB5A"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/ScriptScanPath.class",
       "Size": 1400,
       "Sha256": "56BFBFE10A43B8D1A71AC1EF048A10D20D5F7E44507664D7E607EFE968EC437A"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/VehicleStartAuthorization.class",
+      "Size": 3150,
+      "Sha256": "0472B9AFAA774BA5B20A26FCCFC3C3B18CF3FF6E878BCA2D2B7ED599230AAEF5"
     }
   ],
   "Dependencies": [
