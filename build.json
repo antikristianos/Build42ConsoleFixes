@@ -9,6 +9,16 @@
       "Sha256": "1E548657DADBB4B3DCD9CAA115316FF146E48EC4E4F6B7DB5174F31A392C1807"
     },
     {
+      "Path": "antikristianos/build42consolefixes/BatteryChargerRemainder$Progress.class",
+      "Size": 586,
+      "Sha256": "838A52234E9FAD16E983293A6180A7AC175E6B4F02BFDB7CE9592914369457D0"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/BatteryChargerRemainder.class",
+      "Size": 2978,
+      "Sha256": "3B244DFF26AF862D43E480B3FCBE84FBD337D4DA1FDF45E796A1F7BB8AE09877"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/CoopServerJvmArguments.class",
       "Size": 5638,
       "Sha256": "ADFFBFA8E9312182ED3A2627DBFBAAB1A1D121FF741B81E267AF9C62D28B1A4D"
@@ -137,6 +147,11 @@
       "Path": "antikristianos/build42consolefixes/PatchAdvancedAnimatorSearchFolders.class",
       "Size": 1983,
       "Sha256": "53C79C225DC48D5FA4FCFA5FB930B917AC40DAD0E854603EAE9B24D1DAA1B124"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchBatteryChargerUpdate.class",
+      "Size": 1702,
+      "Sha256": "4D55710A7BD8241C2D1A2410D4CD0F5B21B9B2613980C1BEF20A1E0E104CF5C3"
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchCoopMasterGarbageCollector.class",
@@ -280,8 +295,8 @@
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchVehicleStartAuthorization.class",
-      "Size": 1105,
-      "Sha256": "46D8F47CCAB2F75A4336F44A957671D55BA79D2412AD7100ECCD3061B249FB5A"
+      "Size": 2176,
+      "Sha256": "2E1A2D6FB4448400CA059A916FB46F947E40F5B65ACB477C994182DB4E25660A"
     },
     {
       "Path": "antikristianos/build42consolefixes/ScriptScanPath.class",
