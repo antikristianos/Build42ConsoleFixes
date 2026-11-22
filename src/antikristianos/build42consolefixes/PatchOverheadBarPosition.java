@@ -8,6 +8,7 @@ public final class PatchOverheadBarPosition {
     private PatchOverheadBarPosition() { }
     @Patch.OnExit
     public static void exit(@Patch.This ActionProgressBar bar, @Patch.Argument(0) int playerIndex) {
+        SeatedOverheadPosition.position(bar, playerIndex);
         OverheadDisplayScale.positionBar(bar, playerIndex);
     }
 }
