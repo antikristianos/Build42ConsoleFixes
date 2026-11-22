@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "main",
-  "Tag": "v1.13",
-  "ModVersion": "1.13",
+  "Tag": "v1.14",
+  "ModVersion": "1.14",
   "CollectionVersion": null,
   "WorkshopId": 3778165486,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778165486",
-  "UploadManifestSha256": "FF319F6FFDA92418CFE4AC43BC39E217D5B13A46EB3F741F7F0CC6A001BE6472",
+  "UploadManifestSha256": "839BA1298B3B39584F1A4EB1E81D458C281A5F5FDD0BFD256C906150FC17708C",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes/42.22/media/java/Build42ConsoleFixes.jar",
-    "Size": 69650,
-    "Sha256": "0D321606881405EEFF7477A7117D2C08AA7CAC677E2758E7B39910C9C2B5B485"
+    "Size": 73569,
+    "Sha256": "C146A7CB0505249993363E5422D1C92BB3D771AEDEB68BFA8EEBB6E4C1781F19"
   },
   "AdditionalArtifacts": [],
   "Sources": [
@@ -24,17 +24,17 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 227,
-      "Sha256": "60228DCFD1C5A884C4D44A0F508B5FF2B89DFEEB9AFD818DB151B14917CE544E"
+      "Sha256": "DE0FDACF5DD87324149360284A38A8D485AA64F1ACD9634EA1B7F98C821BEB2C"
     },
     {
       "Path": "README.md",
       "Size": 1454,
-      "Sha256": "41B2B48476C6D2DE012238573F4A6536776D96C6EB78D84DB2B159E015FBA4E2"
+      "Sha256": "4185592585EA58A93EC8340802D8D5150189A9AA5E901B581C555C92434A407C"
     },
     {
       "Path": "build.json",
-      "Size": 12212,
-      "Sha256": "CC8E4FAF380ABA39B1DB6EF057E3B7EA229191EBE1DB3803432E1C5937721E7C"
+      "Size": 12831,
+      "Sha256": "457796D7067FB2CB8EA64B263956CAD3BB45105033B5D17E8EB5F48CB0D0A7F4"
     },
     {
       "Path": "build.ps1",
@@ -47,14 +47,24 @@
       "Sha256": "5F8BE8B00A63D13BD8A62F69B3174F8724311F16AC4E0DEB64DCF8735C4BBF59"
     },
     {
+      "Path": "runtime/42.22/media/lua/server/Build42ConsoleFixes/VehicleBattery.lua",
+      "Size": 3599,
+      "Sha256": "B159FAAB86A1F1997BA98A70DB595C0776E6FCAD13CBDC0B8BB9F18BC52D64D7"
+    },
+    {
       "Path": "runtime/42.22/mod.info",
       "Size": 620,
-      "Sha256": "B738A777ED49D9FD04C7B6A60AFB1BFB4A6E02FFE9093D96FAB502233B5640FD"
+      "Sha256": "699D4F23C81DA74F5CC83C88D01CA5EDA5CE370B19338FBD1D85C742BC77890C"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",
       "Size": 1818,
       "Sha256": "420D3A7B7FCB3735E6D692D360823B4239406D1BCA4E51D0CE9128D6B2D08C6E"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/BatteryChargerRemainder.java",
+      "Size": 3008,
+      "Sha256": "2CD08192791076432EEC664EA861C6990D8A57D8377E273D401034635E3DD544"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/CoopServerJvmArguments.java",
@@ -135,6 +145,11 @@
       "Path": "src/antikristianos/build42consolefixes/PatchAdvancedAnimatorSearchFolders.java",
       "Size": 1230,
       "Sha256": "47A6FAFF441275791EF039DB7F361F0CFB4993C8290A36AFD7D1829E4B02F134"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchBatteryChargerUpdate.java",
+      "Size": 1130,
+      "Sha256": "8A6B5D70AF384198A1D72E9297F499ACFECA1B365E86CA6E8A430FC24E10B63E"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchCoopMasterGarbageCollector.java",
@@ -278,8 +293,8 @@
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchVehicleStartAuthorization.java",
-      "Size": 559,
-      "Sha256": "BC405444C36E36976CCA81E1E36D63D1D78E24D42D1F10FFCFE50EEF9CC5BCCB"
+      "Size": 1610,
+      "Sha256": "B2CDD5266F2B9D8DB06B4936AB3D04BFE36032D72BA8B3F65BAC50F0101BC3E4"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ScriptScanPath.java",
