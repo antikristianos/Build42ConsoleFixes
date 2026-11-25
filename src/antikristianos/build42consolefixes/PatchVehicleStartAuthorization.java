@@ -28,6 +28,7 @@ public final class PatchVehicleStartAuthorization {
 
     @Patch.OnExit
     public static void exit(@Patch.This BaseVehicle vehicle,
+            @Patch.Argument(0) boolean haveKey,
             @Patch.Local("starterBattery") VehiclePart battery,
             @Patch.Local("starterCharge") float charge) {
         if (GameServer.server && battery != null

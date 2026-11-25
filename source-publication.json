@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "main",
-  "Tag": "v1.14",
-  "ModVersion": "1.14",
+  "Tag": "v1.15",
+  "ModVersion": "1.15",
   "CollectionVersion": null,
   "WorkshopId": 3778165486,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3778165486",
-  "UploadManifestSha256": "839BA1298B3B39584F1A4EB1E81D458C281A5F5FDD0BFD256C906150FC17708C",
+  "UploadManifestSha256": "67E5470A254DF5E9A9CAB8A7B082F7DDA490888E9F133BA277956457015CD22F",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes/42.22/media/java/Build42ConsoleFixes.jar",
-    "Size": 73569,
-    "Sha256": "C146A7CB0505249993363E5422D1C92BB3D771AEDEB68BFA8EEBB6E4C1781F19"
+    "Size": 79706,
+    "Sha256": "D2D2E924942937267E09A5F1DF83F48CFB18E802BB9366629DBA9B8F6C88F8F4"
   },
   "AdditionalArtifacts": [],
   "Sources": [
@@ -24,17 +24,17 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 227,
-      "Sha256": "DE0FDACF5DD87324149360284A38A8D485AA64F1ACD9634EA1B7F98C821BEB2C"
+      "Sha256": "10E586D0ACF21066711014589D7B498915B4E2D9D49510E48DE5300D74402245"
     },
     {
       "Path": "README.md",
       "Size": 1454,
-      "Sha256": "4185592585EA58A93EC8340802D8D5150189A9AA5E901B581C555C92434A407C"
+      "Sha256": "21F5BE32DB49279BE3F48A771CF2842C6A8A8D44512BF8279AA39963221CD77A"
     },
     {
       "Path": "build.json",
-      "Size": 12831,
-      "Sha256": "457796D7067FB2CB8EA64B263956CAD3BB45105033B5D17E8EB5F48CB0D0A7F4"
+      "Size": 14044,
+      "Sha256": "E0FB1B084F1E73771FB47E7B2861F74205CA9B02DC17B169699798A5EC8227E8"
     },
     {
       "Path": "build.ps1",
@@ -43,8 +43,8 @@
     },
     {
       "Path": "runtime/42.22/media/lua/client/Build42ConsoleFixes/ModLoadOrder.lua",
-      "Size": 3334,
-      "Sha256": "5F8BE8B00A63D13BD8A62F69B3174F8724311F16AC4E0DEB64DCF8735C4BBF59"
+      "Size": 5127,
+      "Sha256": "19073B430895F8E7D420AFF4E1C500FBD064ADF21BF3ABC91690CCA80B17FA6A"
     },
     {
       "Path": "runtime/42.22/media/lua/server/Build42ConsoleFixes/VehicleBattery.lua",
@@ -54,7 +54,7 @@
     {
       "Path": "runtime/42.22/mod.info",
       "Size": 620,
-      "Sha256": "699D4F23C81DA74F5CC83C88D01CA5EDA5CE370B19338FBD1D85C742BC77890C"
+      "Sha256": "908CEBFE1F61D6444913A8F622D74844ECC8859C60A3BAC3B4EA4686D42EDB3B"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",
@@ -223,8 +223,8 @@
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchOverheadBarPosition.java",
-      "Size": 514,
-      "Sha256": "7408B0EE20A77C2E5E8EE03DC3E349A5FE1A72742A0FC7CAFFB01F5899740572"
+      "Size": 573,
+      "Sha256": "B384E093541D07986D386AC881C9B5312974C2CFA74CB150D79A3554525E62B8"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchOverheadBarTexture.java",
@@ -277,6 +277,26 @@
       "Sha256": "40C09DDE48A1CE1D7D142765E8B7FC09B2166C03CBA2F40A86145F09F8849371"
     },
     {
+      "Path": "src/antikristianos/build42consolefixes/PatchSeatedBackWeapon.java",
+      "Size": 739,
+      "Sha256": "C8758825FD6E914C069C0666C5912430B49B63A70C1CE3AFCE245B482D424F38"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchSeatedEquipmentTransition.java",
+      "Size": 900,
+      "Sha256": "2C2C86E271394F785D0B4AE1122B718323B0922F8E83CAF2747E4CF5FB78A915"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchSeatedHandModel.java",
+      "Size": 904,
+      "Sha256": "E58B6185C082EFCCC429845A709346A006DB62532F9EDB20285DA03A818E1A5C"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/PatchSeatedHandProp.java",
+      "Size": 845,
+      "Sha256": "A0A1D7528CE57AEEBCA10667CD070B0C1DEB90753F87232AD18B04FD923922B4"
+    },
+    {
       "Path": "src/antikristianos/build42consolefixes/PatchServerHeadlessIconWarning.java",
       "Size": 551,
       "Sha256": "656F4432F11904C102E0ED01EFF410061509D8AC63EE85C352BDD196C8CAE47F"
@@ -293,13 +313,23 @@
     },
     {
       "Path": "src/antikristianos/build42consolefixes/PatchVehicleStartAuthorization.java",
-      "Size": 1610,
-      "Sha256": "B2CDD5266F2B9D8DB06B4936AB3D04BFE36032D72BA8B3F65BAC50F0101BC3E4"
+      "Size": 1658,
+      "Sha256": "1E705EFA20A82F7FF58031E6A3CEC0FC54C142EC1BC9A82180FA5CFB48D3C71E"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ScriptScanPath.java",
       "Size": 1208,
       "Sha256": "FE6735932A45BDC18D69503C0B5F7BBC96B687BA67980746E4AD4FF7EB9B6C5D"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/SeatedEquipmentModels.java",
+      "Size": 1806,
+      "Sha256": "786520CBA87F07121CBD2D99FBEE49A99F00FB6FA38F80FECF7A0CAA0740BE25"
+    },
+    {
+      "Path": "src/antikristianos/build42consolefixes/SeatedOverheadPosition.java",
+      "Size": 1710,
+      "Sha256": "FB0A97BFF217F85EADE9E9A0994B693B7A817B8D9FB5DCE17D4CA5093523BFCD"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/VehicleStartAuthorization.java",

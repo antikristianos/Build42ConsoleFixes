@@ -225,8 +225,8 @@
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchOverheadBarPosition.class",
-      "Size": 1108,
-      "Sha256": "D19D3780C8B96AD55C09F806E5E2A24DEE942EB8279F83A546375F003B0DF406"
+      "Size": 1201,
+      "Sha256": "131ECF0C9B7414914E06C1E6ED3DCBCC06C1A42CDB31D60E7E3433D9B874241F"
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchOverheadBarTexture.class",
@@ -279,6 +279,26 @@
       "Sha256": "C4A8194067806A362571EDAA793AF98B6EA5AE403580D5E607F518DF148E88C2"
     },
     {
+      "Path": "antikristianos/build42consolefixes/PatchSeatedBackWeapon.class",
+      "Size": 1237,
+      "Sha256": "A4DC93E95F0E9174D7702D59A64E9E351987B37EC3007B7E03DF451FC26CE257"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchSeatedEquipmentTransition.class",
+      "Size": 1639,
+      "Sha256": "AB422BCE2EC193CB0D58BA66C99E8271ADFD2864403A292B1B51CD4A5DBED12E"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchSeatedHandModel.class",
+      "Size": 1379,
+      "Sha256": "BCB9A480F92E0D150AB9BEF6F9E05E77DC187EE76F3D1B526A724546685BA23C"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/PatchSeatedHandProp.class",
+      "Size": 1318,
+      "Sha256": "8548DCA2D56E3B044CB716CC99A49FDFF41B7EE9591F5B1216B214E14746DCFC"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/PatchServerHeadlessIconWarning.class",
       "Size": 1065,
       "Sha256": "6A8FDB6D6AB0479CDA7BEE6070492EAD773C8F390D4B2D5B8E55A87528A25374"
@@ -295,13 +315,23 @@
     },
     {
       "Path": "antikristianos/build42consolefixes/PatchVehicleStartAuthorization.class",
-      "Size": 2176,
-      "Sha256": "2E1A2D6FB4448400CA059A916FB46F947E40F5B65ACB477C994182DB4E25660A"
+      "Size": 2188,
+      "Sha256": "3CB347E1B469BEF5F5806C17FE11A4FDDF9AA64F7B150C58432BE1DB5224ABA3"
     },
     {
       "Path": "antikristianos/build42consolefixes/ScriptScanPath.class",
       "Size": 1400,
       "Sha256": "56BFBFE10A43B8D1A71AC1EF048A10D20D5F7E44507664D7E607EFE968EC437A"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/SeatedEquipmentModels.class",
+      "Size": 2242,
+      "Sha256": "2E9B30DDD09925F6156AD981C1D18DC80A41B4985F071E742953669C3A519B72"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/SeatedOverheadPosition.class",
+      "Size": 1792,
+      "Sha256": "9D98978FCE76BEB42D0B2C72B51A0C42E35B7AB0278E3B092305B16A92DC3171"
     },
     {
       "Path": "antikristianos/build42consolefixes/VehicleStartAuthorization.class",
