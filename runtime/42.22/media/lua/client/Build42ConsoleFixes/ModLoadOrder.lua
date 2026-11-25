@@ -4,10 +4,6 @@ local modLoadOrderPanel = ModSelector and ModSelector.ModLoadOrderPanel
 if not modLoadOrderPanel or type(modLoadOrderPanel.autoSort) ~= "function" then
     return
 end
-if modLoadOrderPanel.build42ConsoleFixesAutoSort then
-    return
-end
-
 local originalAutoSort = modLoadOrderPanel.autoSort
 
 local function prioritizeZombieBuddy(items)
@@ -107,5 +103,45 @@ local function autoSort(self, ...)
     prioritizeZombieBuddy(items)
 end
 
-modLoadOrderPanel.autoSort = autoSort
-modLoadOrderPanel.build42ConsoleFixesAutoSort = autoSort
+if not modLoadOrderPanel.build42ConsoleFixesAutoSort then
+    modLoadOrderPanel.autoSort = autoSort
+    modLoadOrderPanel.build42ConsoleFixesAutoSort = autoSort
+end
+
+local function installForeignSorter()
+    local mods = getActivatedMods ~= nil and getActivatedMods() or nil
+    if mods == nil or not mods:contains("ModLoadOrderSorter_b42") then return end
+    local loaded, sorter = pcall(require, "OptionScreens/ModSelector/MLOS_sorting")
+    if not loaded or type(sorter) ~= "table" or type(sorter.SortModsOrder) ~= "function" then return end
+    if sorter.SortModsOrder == sorter.build42ConsoleFixesSort then return end
+    local previousSort = sorter.SortModsOrder
+    local function sort(self, rows, ...)
+        local orderedIds = previousSort(self, rows, ...)
+        if type(rows) ~= "table" or type(orderedIds) ~= "table" then return orderedIds end
+        local byId = {}
+        for _, row in ipairs(rows) do
+            if row.item ~= nil then byId[row.item.modId] = row end
+        end
+        local orderedRows, seen = {}, {}
+        for _, id in ipairs(orderedIds) do
+            local row = byId[id]
+            -- Preserve an unsupported preceding result instead of guessing rows.
+            if row == nil or seen[id] then return orderedIds end
+            seen[id] = true
+            orderedRows[#orderedRows + 1] = row
+        end
+        prioritizeZombieBuddy(orderedRows)
+        for index, row in ipairs(orderedRows) do orderedIds[index] = row.item.modId end
+        return orderedIds
+    end
+    sorter.SortModsOrder = sort
+    sorter.build42ConsoleFixesSort = sort
+end
+
+installForeignSorter()
+if Events ~= nil and not modLoadOrderPanel.build42ConsoleFixesForeignInstaller then
+    modLoadOrderPanel.build42ConsoleFixesForeignInstaller = installForeignSorter
+    for _, event in ipairs({ Events.OnGameBoot, Events.OnMainMenuEnter, Events.OnGameStart }) do
+        if event ~= nil then event.Add(installForeignSorter) end
+    end
+end
