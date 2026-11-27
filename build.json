@@ -279,6 +279,11 @@
       "Sha256": "C4A8194067806A362571EDAA793AF98B6EA5AE403580D5E607F518DF148E88C2"
     },
     {
+      "Path": "antikristianos/build42consolefixes/PatchScriptRegisterState.class",
+      "Size": 954,
+      "Sha256": "2CC3459FF435C14C53392CE95BEB691BC1804720C40769A960664D40C476B64C"
+    },
+    {
       "Path": "antikristianos/build42consolefixes/PatchSeatedBackWeapon.class",
       "Size": 1237,
       "Sha256": "A4DC93E95F0E9174D7702D59A64E9E351987B37EC3007B7E03DF451FC26CE257"
@@ -317,6 +322,16 @@
       "Path": "antikristianos/build42consolefixes/PatchVehicleStartAuthorization.class",
       "Size": 2188,
       "Sha256": "3CB347E1B469BEF5F5806C17FE11A4FDDF9AA64F7B150C58432BE1DB5224ABA3"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/ScriptRegisterState$Access.class",
+      "Size": 1197,
+      "Sha256": "AA587ED5AC863A27F970C6DE76515B8F4D02DC5D60DF863BCA148E65C05B4054"
+    },
+    {
+      "Path": "antikristianos/build42consolefixes/ScriptRegisterState.class",
+      "Size": 1336,
+      "Sha256": "E82B3AAF45F4F354CEBCB468129DEBABE88B66B7B061630CD189C274562CF371"
     },
     {
       "Path": "antikristianos/build42consolefixes/ScriptScanPath.class",
