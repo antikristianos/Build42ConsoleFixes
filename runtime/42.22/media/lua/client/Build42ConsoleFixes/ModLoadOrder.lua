@@ -5,32 +5,68 @@ if not modLoadOrderPanel or type(modLoadOrderPanel.autoSort) ~= "function" then
     return
 end
 local originalAutoSort = modLoadOrderPanel.autoSort
+local foreignSortState
 
-local function prioritizeZombieBuddy(items)
-    local rowsById = {}
+local function prioritizeZombieBuddy(items, extraRules)
+    local rowsById, duplicate = {}, false
     for _, row in ipairs(items) do
+        if rowsById[row.item.modId] then duplicate = true end
         rowsById[row.item.modId] = row
     end
     local buddy = rowsById.ZombieBuddy
     if not buddy then
         return
     end
+    if duplicate then
+        local ordered = {buddy}
+        for _, row in ipairs(items) do if row ~= buddy then ordered[#ordered + 1] = row end end
+        for position, row in ipairs(ordered) do items[position] = row end
+        print("[ConsoleFixes] Duplicate mod IDs: ZombieBuddy stays first; other rows retain the preceding order.")
+        return
+    end
 
-    local requirements = {}
-    local dependents = {}
+    local predecessors, successors, dependents = {}, {}, {}
     for _, row in ipairs(items) do
         local id = row.item.modId
-        local required = row.item.modInfo:getRequire()
-        requirements[id] = {}
+        predecessors[id], successors[id], dependents[id] = {}, {}, {}
+    end
+    local rootConflict = false
+    local function before(first, last, required)
+        if not rowsById[first] or not rowsById[last] then return end
+        -- The user's fixed root wins over contradictory metadata, including hints.
+        if last == "ZombieBuddy" then
+            rootConflict = true
+            return
+        end
+        if not predecessors[last][first] then
+            predecessors[last][first] = true
+            successors[first][#successors[first] + 1] = last
+        end
+        if required then dependents[first][last] = true end
+    end
+    for _, row in ipairs(items) do
+        local id, info = row.item.modId, row.item.modInfo
+        local required = info:getRequire()
         if required then
             for index = 0, required:size() - 1 do
-                local dependency = required:get(index)
-                if rowsById[dependency] then
-                    table.insert(requirements[id], dependency)
-                    dependents[dependency] = dependents[dependency] or {}
-                    table.insert(dependents[dependency], id)
-                end
+                before(required:get(index), id, true)
             end
+        end
+        local after = info.getLoadAfter and info:getLoadAfter()
+        if after then
+            for index = 0, after:size() - 1 do before(after:get(index), id) end
+        end
+        local ahead = info.getLoadBefore and info:getLoadBefore()
+        if ahead then
+            for index = 0, ahead:size() - 1 do before(id, ahead:get(index)) end
+        end
+        -- The foreign sorter's resolved cache includes user sorting-rule overrides.
+        local extra = extraRules and extraRules[id]
+        if extra then
+            for _, dependency in ipairs(extra.requirements or {}) do before(dependency, id, true) end
+            local rules = extra.sortingRules or {}
+            for _, dependency in ipairs(rules.loadAfter or {}) do before(dependency, id) end
+            for _, following in ipairs(rules.loadBefore or {}) do before(id, following) end
         end
     end
 
@@ -42,33 +78,56 @@ local function prioritizeZombieBuddy(items)
             queue[#queue + 1] = id
         end
     end
-    -- Follow required dependencies only; optional load-order hints are not dependencies.
+    -- Seed the block with mandatory Buddy consumers, not every optional follower.
     local index = 1
     while index <= #queue do
-        for _, id in ipairs(dependents[queue[index]] or {}) do
-            include(id)
-        end
+        for id in pairs(dependents[queue[index]]) do include(id) end
         index = index + 1
     end
-    -- Keep any other required libraries ahead of the mods that need them.
+    -- Pull in all active predecessors, including optional hints and their chains.
     index = 1
     while index <= #queue do
-        for _, id in ipairs(requirements[queue[index]]) do
-            include(id)
-        end
+        for id in pairs(predecessors[queue[index]]) do include(id) end
         index = index + 1
     end
 
     local ordered = {buddy}
-    for _, row in ipairs(items) do
-        if row ~= buddy and group[row.item.modId] then
-            ordered[#ordered + 1] = row
+    local emitted, pending = {ZombieBuddy = true}, {}
+    for id, incoming in pairs(predecessors) do
+        local count = 0
+        for dependency in pairs(incoming) do
+            if dependency ~= "ZombieBuddy" then count = count + 1 end
         end
+        pending[id] = count
     end
-    for _, row in ipairs(items) do
-        if not group[row.item.modId] then
-            ordered[#ordered + 1] = row
+    local cycle = false
+    for _, preferred in ipairs({true, false}) do
+        while true do
+            local selected, remaining
+            for _, row in ipairs(items) do
+                local id = row.item.modId
+                if not emitted[id] and (group[id] == true) == preferred then
+                    remaining = true
+                    if pending[id] == 0 then selected = row; break end
+                end
+            end
+            if not remaining then break end
+            if not selected then cycle = true; break end
+            local id = selected.item.modId
+            emitted[id] = true
+            ordered[#ordered + 1] = selected
+            for _, following in ipairs(successors[id]) do pending[following] = pending[following] - 1 end
         end
+        if cycle then break end
+    end
+    if cycle then
+        -- Never expose a partly sorted result or lose rows on inconsistent metadata.
+        ordered = {buddy}
+        for _, row in ipairs(items) do if row ~= buddy then ordered[#ordered + 1] = row end end
+        print("[ConsoleFixes] Mod-order cycle: ZombieBuddy stays first; other rows retain the preceding order.")
+    end
+    if rootConflict then
+        print("[ConsoleFixes] Mod-order metadata conflicts with ZombieBuddy's fixed first position; that position takes precedence.")
     end
     for position, row in ipairs(ordered) do
         items[position] = row
@@ -76,6 +135,7 @@ local function prioritizeZombieBuddy(items)
 end
 
 local function autoSort(self, ...)
+    local beforeForeignSort = foreignSortState and foreignSortState.serial
     originalAutoSort(self, ...)
 
     local items = self.modList and self.modList.items
@@ -100,7 +160,8 @@ local function autoSort(self, ...)
             items[sourceIndex] = nil
         end
     end
-    prioritizeZombieBuddy(items)
+    local rules = foreignSortState and foreignSortState.serial ~= beforeForeignSort and foreignSortState.rules
+    prioritizeZombieBuddy(items, rules or nil)
 end
 
 if not modLoadOrderPanel.build42ConsoleFixesAutoSort then
@@ -113,7 +174,12 @@ local function installForeignSorter()
     if mods == nil or not mods:contains("ModLoadOrderSorter_b42") then return end
     local loaded, sorter = pcall(require, "OptionScreens/ModSelector/MLOS_sorting")
     if not loaded or type(sorter) ~= "table" or type(sorter.SortModsOrder) ~= "function" then return end
+    if type(sorter.build42ConsoleFixesSortState) ~= "table" then
+        sorter.build42ConsoleFixesSortState = {serial = 0}
+    end
+    foreignSortState = sorter.build42ConsoleFixesSortState
     if sorter.SortModsOrder == sorter.build42ConsoleFixesSort then return end
+    local state = foreignSortState
     local previousSort = sorter.SortModsOrder
     local function sort(self, rows, ...)
         local orderedIds = previousSort(self, rows, ...)
@@ -130,7 +196,9 @@ local function installForeignSorter()
             seen[id] = true
             orderedRows[#orderedRows + 1] = row
         end
-        prioritizeZombieBuddy(orderedRows)
+        state.serial = state.serial + 1
+        state.rules = sorter.modsInfoCache
+        prioritizeZombieBuddy(orderedRows, state.rules)
         for index, row in ipairs(orderedRows) do orderedIds[index] = row.item.modId end
         return orderedIds
     end
