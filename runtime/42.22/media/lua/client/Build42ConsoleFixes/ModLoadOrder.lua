@@ -5,9 +5,23 @@ if not modLoadOrderPanel or type(modLoadOrderPanel.autoSort) ~= "function" then
     return
 end
 local originalAutoSort = modLoadOrderPanel.autoSort
-local foreignSortState
 
-local function prioritizeZombieBuddy(items, extraRules)
+local function isForeignSorterActive()
+    local mods = getActivatedMods ~= nil and getActivatedMods() or nil
+    return mods ~= nil and mods:contains("ModLoadOrderSorter_b42")
+end
+
+local function moveZombieBuddyFirst(items)
+    for index, row in ipairs(items) do
+        if row.item.modId == "ZombieBuddy" then
+            for position = index, 2, -1 do items[position] = items[position - 1] end
+            items[1] = row
+            return
+        end
+    end
+end
+
+local function prioritizeZombieBuddy(items)
     local rowsById, duplicate = {}, false
     for _, row in ipairs(items) do
         if rowsById[row.item.modId] then duplicate = true end
@@ -59,14 +73,6 @@ local function prioritizeZombieBuddy(items, extraRules)
         local ahead = info.getLoadBefore and info:getLoadBefore()
         if ahead then
             for index = 0, ahead:size() - 1 do before(id, ahead:get(index)) end
-        end
-        -- The foreign sorter's resolved cache includes user sorting-rule overrides.
-        local extra = extraRules and extraRules[id]
-        if extra then
-            for _, dependency in ipairs(extra.requirements or {}) do before(dependency, id, true) end
-            local rules = extra.sortingRules or {}
-            for _, dependency in ipairs(rules.loadAfter or {}) do before(dependency, id) end
-            for _, following in ipairs(rules.loadBefore or {}) do before(id, following) end
         end
     end
 
@@ -134,8 +140,16 @@ local function prioritizeZombieBuddy(items, extraRules)
     end
 end
 
+local function finalizeOrder(items)
+    if isForeignSorterActive() then
+        -- The active external sorter owns every nonroot ordering decision.
+        moveZombieBuddyFirst(items)
+    else
+        prioritizeZombieBuddy(items)
+    end
+end
+
 local function autoSort(self, ...)
-    local beforeForeignSort = foreignSortState and foreignSortState.serial
     originalAutoSort(self, ...)
 
     local items = self.modList and self.modList.items
@@ -160,8 +174,7 @@ local function autoSort(self, ...)
             items[sourceIndex] = nil
         end
     end
-    local rules = foreignSortState and foreignSortState.serial ~= beforeForeignSort and foreignSortState.rules
-    prioritizeZombieBuddy(items, rules or nil)
+    finalizeOrder(items)
 end
 
 if not modLoadOrderPanel.build42ConsoleFixesAutoSort then
@@ -170,16 +183,10 @@ if not modLoadOrderPanel.build42ConsoleFixesAutoSort then
 end
 
 local function installForeignSorter()
-    local mods = getActivatedMods ~= nil and getActivatedMods() or nil
-    if mods == nil or not mods:contains("ModLoadOrderSorter_b42") then return end
+    if not isForeignSorterActive() then return end
     local loaded, sorter = pcall(require, "OptionScreens/ModSelector/MLOS_sorting")
     if not loaded or type(sorter) ~= "table" or type(sorter.SortModsOrder) ~= "function" then return end
-    if type(sorter.build42ConsoleFixesSortState) ~= "table" then
-        sorter.build42ConsoleFixesSortState = {serial = 0}
-    end
-    foreignSortState = sorter.build42ConsoleFixesSortState
     if sorter.SortModsOrder == sorter.build42ConsoleFixesSort then return end
-    local state = foreignSortState
     local previousSort = sorter.SortModsOrder
     local function sort(self, rows, ...)
         local orderedIds = previousSort(self, rows, ...)
@@ -196,9 +203,7 @@ local function installForeignSorter()
             seen[id] = true
             orderedRows[#orderedRows + 1] = row
         end
-        state.serial = state.serial + 1
-        state.rules = sorter.modsInfoCache
-        prioritizeZombieBuddy(orderedRows, state.rules)
+        finalizeOrder(orderedRows)
         for index, row in ipairs(orderedRows) do orderedIds[index] = row.item.modId end
         return orderedIds
     end
