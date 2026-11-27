@@ -3,16 +3,16 @@
   "Project": "Build42ConsoleFixes",
   "Repository": "antikristianos/Build42ConsoleFixes",
   "Branch": "wip",
-  "Tag": "wip-1.126",
-  "ModVersion": "1.16.1",
-  "CollectionVersion": "1.126",
+  "Tag": "wip-1.127",
+  "ModVersion": "1.17.1",
+  "CollectionVersion": "1.127",
   "WorkshopId": 3802764936,
   "WorkshopUrl": "https://steamcommunity.com/sharedfiles/filedetails/?id=3802764936",
-  "UploadManifestSha256": "66AFD89F7F64A50F98433D19EF02FDE47DD132A7648E5EA40FFE755722309CE6",
+  "UploadManifestSha256": "38EF6D3654F3C871AB19A4B86ED425E8682BB1974CE2A843E281FAFA8FC64D27",
   "Artifact": {
     "Path": "mods/Build42ConsoleFixes_WIP/42.22/media/java/Build42ConsoleFixes.jar",
     "Size": 82304,
-    "Sha256": "07BD0805AD53825FE7ABDAE7E3713D3846A66C8638C202B79A5129BAB3E59CEE"
+    "Sha256": "FF9968684A75A7CF4D2349106AB9896481D00D19188792DFDC678F64CE5AABC1"
   },
   "AdditionalArtifacts": [],
   "Sources": [
@@ -24,12 +24,12 @@
     {
       "Path": "MANIFEST.MF",
       "Size": 235,
-      "Sha256": "13AFA563CCECA5DC0163907918857016E4F18B1A51194449546860FE211B6E8A"
+      "Sha256": "E14AA731F59F596FE120CF011F2FB8DFC6480A97DE48DDFA21D502BA2A4F36B9"
     },
     {
       "Path": "README.md",
       "Size": 1460,
-      "Sha256": "A27205E8E69386591A44DAAC20C85C0AE0C9A56B04586CCF52FE099120212CDE"
+      "Sha256": "8428E15B7B2EC1E2272AEDDAAE415F3E5BA0048124D927B5879904C4466BC6B3"
     },
     {
       "Path": "build.json",
@@ -43,8 +43,8 @@
     },
     {
       "Path": "runtime/42.22/media/lua/client/Build42ConsoleFixes/ModLoadOrder.lua",
-      "Size": 8709,
-      "Sha256": "0CFA700E2361B8304C5959AB7F127E010B3AC4944ED73B31881E7886368D05C5"
+      "Size": 8236,
+      "Sha256": "32ED0C5B57F540740C8C2F2644A13BF14FBA8C446C06C7DDF8B38DF18D0CCB92"
     },
     {
       "Path": "runtime/42.22/media/lua/server/Build42ConsoleFixes/VehicleBattery.lua",
@@ -54,7 +54,7 @@
     {
       "Path": "runtime/42.22/mod.info",
       "Size": 600,
-      "Sha256": "33C571F7BC493D74026D94BA9FC1A02D702A44E4731FED69518E48612CCD3800"
+      "Sha256": "547CCB73791552569B5D72D6361503A49929081EFE302F24083C84DF55A2A3E9"
     },
     {
       "Path": "src/antikristianos/build42consolefixes/ActiveModSelection.java",
